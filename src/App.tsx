@@ -136,7 +136,7 @@ const KeyboardLanding: FC = () => {
             Machined from a single block of aerospace-grade alloy.
           </h2>
           <div className="mt-16 w-full max-w-3xl mx-auto bg-gray-800 rounded-xl aspect-video flex items-center justify-center">
-            <div className="text-6xl">🏭</div>
+            <img src='public/feature2.jpg' className='rounded-3xl' alt='Imagen de fabrica'/>
           </div>
         </div>
 
@@ -145,7 +145,6 @@ const KeyboardLanding: FC = () => {
       </section>
 
       {/* Gallery Section */}
-      <GallerySection />
 
       {/* CTA Section */}
       <section className="py-48 px-6 text-center max-w-4xl mx-auto">
@@ -224,40 +223,6 @@ const BentoGrid: FC = () => {
   );
 };
 
-// Gallery Section Component
-const GallerySection: FC = () => {
-  interface GalleryItem {
-    id: number;
-    emoji: string;
-  }
-
-  const items: GalleryItem[] = [
-    { id: 1, emoji: '🎹' },
-    { id: 2, emoji: '⌨️' },
-    { id: 3, emoji: '🖥️' },
-  ];
-
-  return (
-    <section className="bg-gray-50 py-32 px-6">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">
-          Elegance in Detail.
-        </h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {items.map((item: GalleryItem) => (
-            <div 
-              key={item.id}
-              className="bg-white rounded-2xl aspect-square flex items-center justify-center border border-gray-200 hover:border-gray-300 transition"
-            >
-              <div className="text-6xl">{item.emoji}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
 
 // Footer Component
 const FooterSection: FC = () => {
