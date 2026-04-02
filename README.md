@@ -71,3 +71,4 @@ export default defineConfig([
   },
 ])
 ```
+[Link netlify](https://teclado-landing-page.netlify.app/)
