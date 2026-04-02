@@ -1,4 +1,4 @@
-import React, { useState, FC } from 'react';
+import type { FC } from 'react';
 import { ChevronRight, Bluetooth, Palette } from 'lucide-react';
 import { Canvas } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
@@ -20,7 +20,6 @@ function Keyboard(props: any) {
 }
 
 const KeyboardLanding: FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const navLinks: NavLink[] = [
     { label: 'Store', href: '#' },
     { label: 'Support', href: '#' },
